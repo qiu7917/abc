@@ -1,0 +1,271 @@
+body {
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+p {
+  color: #333333;
+}
+
+a {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  color: #333333;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+.sec-cta {
+  position: relative;
+}
+.sec-cta .cta {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 30px;
+  width: 100%;
+}
+@media screen and (max-width: 425px) {
+  .sec-cta .cta {
+    padding: 0 20px;
+  }
+}
+.sec-cta.sec09 .cta {
+  top: 64%;
+}
+.sec-cta.sec12 .cta {
+  top: 71%;
+}
+.sec-cta.sec19 .cta {
+  top: 71%;
+}
+
+.sec02 {
+  margin-top: -16%;
+}
+
+.sec04 {
+  position: relative;
+  z-index: 1000;
+}
+
+.sec05 {
+  margin-top: -22%;
+  position: relative;
+  z-index: 900;
+}
+
+.sec06 {
+  margin-top: -25%;
+  position: relative;
+  z-index: 800;
+}
+
+.sec07 {
+  margin-top: -23%;
+  position: relative;
+  z-index: 700;
+}
+
+.sec08 {
+  margin-top: -20%;
+  position: relative;
+  z-index: 600;
+}
+
+.sec09 {
+  margin-top: -16%;
+  position: relative;
+  z-index: 700;
+}
+
+.sec10 {
+  margin-top: -12%;
+  position: relative;
+  z-index: 800;
+}
+
+.sec11 {
+  margin-top: -11%;
+  position: relative;
+  z-index: 900;
+}
+
+.sec12 {
+  margin-top: -16%;
+  position: relative;
+  z-index: 1000;
+}
+
+.sec13 {
+  background-color: #f2f2f2;
+}
+
+.sec15 {
+  margin-top: -25%;
+}
+
+.sec18 {
+  background-color: #EDF1F3;
+  padding: 0 30px;
+}
+.sec18 .sec18-clinic-list {
+  padding-bottom: 130px;
+}
+.sec18 .sec18-clinic-list .sec18-item {
+  background-color: #FFFFFF;
+  border: 1px solid #0281bd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item {
+  width: 100%;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-header {
+  cursor: pointer;
+  padding: 5% 6%;
+  position: relative;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-header::before, .sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-header::after {
+  content: "";
+  height: 2px;
+  width: 20px;
+  background-color: #0281bd;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-header::after {
+  right: 5%;
+  transform: translateY(-50%) rotate(90deg);
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-header.is-active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-header .sec18-clinic-area {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0281bd;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content {
+  display: none;
+  overflow: hidden;
+  padding: 0 6%;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic {
+  padding-top: 26px;
+  border-top: 1px solid #0281bd;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic .clinic-name {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic .clinic-img {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl {
+  padding: 0 20px 30px 20px;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl dt {
+  background-color: #0281bd;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  line-height: 36px;
+  height: 36px;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl dd {
+  padding: 10px 0;
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl .tel-pc {
+  display: block;
+}
+@media screen and (max-width: 425px) {
+  .sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl .tel-pc {
+    display: none;
+  }
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl .tel-sp {
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl .tel-sp {
+    display: block;
+  }
+}
+.sec18 .sec18-clinic-list .sec18-item .accordion-item .accordion-content .sec18-clinic dl .tel-sp a {
+  display: block;
+}
+
+.sec19 {
+  margin-top: -16%;
+}
+
+.sec20 {
+  background-color: #4f4f4f;
+}
+
+footer .container {
+  padding-bottom: 70px;
+  background-color: #4f4f4f;
+  position: relative;
+}
+footer .container .sec20-privacy a {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+}
+@media screen and (max-width: 425px) {
+  footer .container .sec20-privacy a {
+    top: 45%;
+  }
+}
+footer .container .sec20-privacy a img {
+  width: 100%;
+}
+footer .container .fixedbtn {
+  padding: 0 10px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 550px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  footer .container .fixedbtn {
+    max-width: 768px;
+  }
+}/*# sourceMappingURL=style.css.map */
